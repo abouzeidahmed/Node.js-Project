@@ -1,10 +1,10 @@
 Multi-Service Platform Backend Documentation
-📌 Project Overview
+ Project Overview
 
 This backend project provides core functionalities for a multi-service platform, including user management, item handling, orders, authentication, cart, favorites, and payments.
 It is built using Node.js, Express.js, MongoDB, and TypeScript.
 
-✅ Features
+Features
 •	• User Registration and Login (JWT Authentication)
 •	• Admin and Customer Roles
 •	• Product/Item Management (CRUD)
@@ -15,7 +15,7 @@ It is built using Node.js, Express.js, MongoDB, and TypeScript.
 •	• Middleware for Authorization and Authentication
 •	• RESTful API Endpoints
 •	• MongoDB-based Data Storage
-🚀 Technologies Used
+Technologies Used
 •	• Node.js + Express.js
 •	• TypeScript
 •	• MongoDB + Mongoose
@@ -29,18 +29,17 @@ It is built using Node.js, Express.js, MongoDB, and TypeScript.
    npm install
 3. Run the development server:
    npm run dev
-🔐 Authentication
+ Authentication
 
 - Register and login using `/api/auth` endpoints.
 - JWT token required in `Authorization` header as `Bearer TOKEN` for protected routes.
 
-🔄 API Endpoints Overview
-👤 Auth (`/api/auth`)
+API Endpoints Overview Auth (`/api/auth`)
 Method	Endpoint	Description
 POST	/register	Register new customer
 POST	/login	Login with credentials
 GET	/me	Get current user info
-📦 Items (`/api/items`)
+Items (`/api/items`)
 Method	Endpoint	Description
 GET	/	Get all items
 GET	/:id	Get item by ID
@@ -48,7 +47,7 @@ POST	/	Add new item (admin only)
 PUT	/:id	Update item (admin only)
 DELETE	/:id	Delete item (admin only)
  
-🧩 Project Structure
+ Project Structure
 
 src/
 ├── controllers/         # All route controllers
@@ -59,18 +58,18 @@ src/
 ├── data/                # Optional: static data
 ├── server.ts            # Main server entry point
 
-📂 Environment Variables
+ Environment Variables
 
 Create a `.env` file and add:
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/your-db
 JWT_SECRET=your_jwt_secret_key
 
-📮 Future Improvements
+ Future Improvements
 •	• Integrate Stripe/PayPal for real payments
 •	• Add file/image uploads for items
 •	• Add product categories and filters
 •	• Add Admin Panel (Frontend)
-👨💻 Author
+ Author
 Developed by Ahmed Abouzeid
 Feel free to contribute or fork the project.
